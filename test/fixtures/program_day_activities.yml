@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  program_day: one
+  activity: one
+  user: one
+  completed: false
+
+two:
+  program_day: two
+  activity: two
+  user: two
+  completed: false

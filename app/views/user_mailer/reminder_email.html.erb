@@ -1,0 +1,8 @@
+<p>Hi <%= @user.name %>,</p>
+<p>You have the following activities pending:</p>
+<ul>
+  <% @activities.each do |activity| %>
+    <li><%= activity.activity.title %> (Day <%= activity.program_day.day_number %>)</li>
+  <% end %>
+</ul>
+<p>Thanks</p>

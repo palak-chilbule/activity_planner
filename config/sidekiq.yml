@@ -1,0 +1,10 @@
+:concurrency: 10
+:queues:
+  - default
+  - mailers
+
+:scheduler:
+  :send_reminder_job:
+    cron: "0 20 * * *"
+    class: "SendRemainderEmailWorker"
+    queue: default
