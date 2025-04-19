@@ -9,6 +9,8 @@
 #   end
 
 user = User.find_or_create_by!(name: "Alice", email: "alice@example.com")
+program_start_date = Date.today - 13
+program_end_date   = Date.today + 16
 (14..21).each do |day_num|
  day = ProgramDay.create!(day_number: day_num)
  %w[
@@ -23,6 +25,6 @@ user = User.find_or_create_by!(name: "Alice", email: "alice@example.com")
  ].each do |entry|
    name, freq = entry.split(":")
    activity = Activity.find_or_create_by!(title: name.strip, frequency: freq.strip, )
-   ProgramDayActivity.find_or_create_by!(program_day: day, activity: activity, user: user)
+   ProgramDayActivity.find_or_create_by!(program_day: day, activity: activity, user: user, program_start_date: program_start_date, program_end_date: program_end_date)
  end
 end
