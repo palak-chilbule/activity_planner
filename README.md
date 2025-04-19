@@ -12,11 +12,11 @@ Prerequisites:
 - Docker Compose
 
 run following commands:
-    git clone https://github.com/palak-chilbule/activity_planner.git
-    cd activity_planner
-    docker-compose build
-    docker-compose run web rails db:create db:migrate db:seed
-    docker-compose up
+    - git clone https://github.com/palak-chilbule/activity_planner.git
+    - cd activity_planner
+    - docker-compose build
+    - docker-compose run web rails db:create db:migrate db:seed
+    - docker-compose up
 
 * Else
 
