@@ -1,9 +1,24 @@
 # README
+Tech Stack
+- Ruby on Rails
+- PostgreSQL
+- Sidekiq (background jobs)
+- Redis
+- Docker / Docker Compose
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* If running using docker
+Prerequisites:
+- Docker
+- Docker Compose
 
-Things you may want to cover:
+run following commands:
+    git clone https://github.com/palak-chilbule/activity_planner.git
+    cd activity_planner
+    docker-compose build
+    docker-compose run web rails db:create db:migrate db:seed
+    docker-compose up
+
+* Else
 
 * Ruby version
 3.2.2
